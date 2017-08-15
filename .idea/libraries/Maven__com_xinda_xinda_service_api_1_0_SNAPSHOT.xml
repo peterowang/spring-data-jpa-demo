@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.xinda:xinda-service-api:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/xinda/xinda-service-api/1.0-SNAPSHOT/xinda-service-api-1.0-20170802.084816-62.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/xinda/xinda-service-api/1.0-SNAPSHOT/xinda-service-api-1.0-20170802.084816-62-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/xinda/xinda-service-api/1.0-SNAPSHOT/xinda-service-api-1.0-20170802.084816-62-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

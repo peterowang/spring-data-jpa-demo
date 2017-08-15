@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo" />
+        <module name="shiro-demo" />
+        <module name="xinda-zhuisu-admin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.7" />
+      <module name="shiro-demo" target="1.7" />
+      <module name="shiro-web" target="1.7" />
+      <module name="xinda-zhuisu-admin" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

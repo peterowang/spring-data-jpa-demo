@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="xinda-zhuisu-admin:war">
+    <output-path>E:/new2_project/Yimuyun-zhuisu-houtai/target</output-path>
+    <root id="archive" name="xinda-web-admin.war">
+      <element id="artifact" artifact-name="xinda-zhuisu-admin:war exploded" />
+    </root>
+  </artifact>
+</component>

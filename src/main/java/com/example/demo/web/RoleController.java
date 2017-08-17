@@ -1,5 +1,6 @@
 package com.example.demo.web;
 
+import com.example.demo.SpecificationUtil.SimpleSpecificationBuilder;
 import com.example.demo.model.Role;
 import com.example.demo.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,5 +26,12 @@ public class RoleController {
     @RequestMapping("dynamic")
     public List<Role> listByOwn(@RequestParam("id")Integer id, @RequestParam("roleName") String roleName) {
         return roleService.listByOwn(roleName,id);
+    }
+    /**
+     * 测试对Specification的封装
+     */
+    @RequestMapping("specification")
+    public List<Role> listByUtilSpecification(@RequestParam("id")Integer id, @RequestParam("roleName") String roleName){
+        return roleService.spe(roleName, id);
     }
 }

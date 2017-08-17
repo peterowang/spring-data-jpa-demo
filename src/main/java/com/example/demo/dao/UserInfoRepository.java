@@ -12,6 +12,7 @@ import java.util.List;
 
 /**
  * 在多条件动态查询时需要继承JpaSpecificationExecutor接口
+ * JpaSpecificationExecutor可以通过findAll方法传入SimpleSpecification来进行查询
  * Created by BFD-593 on 2017/8/8.
  */
 public interface UserInfoRepository extends JpaRepository<UserInfo,Integer>, JpaSpecificationExecutor {

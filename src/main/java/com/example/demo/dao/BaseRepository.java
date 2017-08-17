@@ -1,6 +1,7 @@
 package com.example.demo.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.repository.NoRepositoryBean;
 
 import java.io.Serializable;
@@ -15,7 +16,7 @@ import java.util.Map;
  * 只要是在jpaConfig里配置的基础名里的接口全会被实例化。
  */
 @NoRepositoryBean
-public interface BaseRepository<T,ID extends Serializable> extends JpaRepository<T,ID>{
+public interface BaseRepository<T,ID extends Serializable> extends JpaRepository<T,ID> {
     //自定义sql查询
     List<T> listBySql(String sql);
     //自定义多条件动态查询

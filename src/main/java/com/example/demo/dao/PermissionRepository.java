@@ -1,6 +1,8 @@
 package com.example.demo.dao;
 
 import com.example.demo.model.Permission;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean;
 
 import java.io.Serializable;
 
@@ -13,6 +15,6 @@ import java.io.Serializable;
     而不需要自己去写了
  * Created by BFD-593 on 2017/8/16.
  */
-public interface PermissionRepository extends BaseRepository<Permission,Integer>{
+public interface PermissionRepository extends BaseRepository<Permission,Integer>,JpaSpecificationExecutor<Permission>{
 
 }

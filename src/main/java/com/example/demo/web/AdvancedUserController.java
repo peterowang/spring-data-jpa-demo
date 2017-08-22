@@ -2,6 +2,8 @@ package com.example.demo.web;
 
 import com.example.demo.model.UserInfo;
 import com.example.demo.service.AdvancedUserInfoService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,10 +19,14 @@ import java.util.List;
 @RestController
 @RequestMapping("/advanced")
 public class AdvancedUserController {
+    private static final Logger log = LoggerFactory.getLogger(AdvancedUserController.class);
     @Autowired
     private AdvancedUserInfoService advancedUserInfoService;
     @RequestMapping(value="page",produces = {"application/json;charset"},method = RequestMethod.GET)
     public Page<UserInfo> pageList(int pageNo,int pageSize){
+        log.info("执行page");
+        log.debug("aaa");
+        log.error("bbbb");
         return advancedUserInfoService.pageList(pageNo, pageSize);
     }
     @RequestMapping(value="listDynamic",produces = {"application/json;charset"},method = RequestMethod.GET)

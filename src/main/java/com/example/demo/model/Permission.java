@@ -1,5 +1,7 @@
 package com.example.demo.model;
 
+import com.alibaba.fastjson.JSONObject;
+
 import javax.annotation.Generated;
 import javax.persistence.*;
 import javax.persistence.Id;
@@ -16,7 +18,6 @@ public class Permission {
     private Integer id;
     @Column(name = "permission_name")
     private String permissionName;
-
     public Integer getId() {
         return id;
     }

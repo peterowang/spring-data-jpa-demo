@@ -19,7 +19,7 @@ import java.util.List;
  * Created by BFD-593 on 2017/8/15.
  */
 @Service
-public class AdvancedUserInfoService {
+public class AdvancedUserInfoService{
     @Autowired
     UserInfoRepository userInfoRepository;
     /**

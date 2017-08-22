@@ -13,7 +13,15 @@ public class Role {
     private Integer id;
     @Column(name="role_name")
     private String roleName;
+    private String permission;
 
+    public String getPermission() {
+        return permission;
+    }
+
+    public void setPermission(String permission) {
+        this.permission = permission;
+    }
 
     public Integer getId() {
         return id;

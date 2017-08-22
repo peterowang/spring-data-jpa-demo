@@ -51,11 +51,18 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.4</version>
 		</dependency>
+		<!--fastjson-->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.36</version>
+		</dependency>
 
 		<!-- Spirng data JPA依赖; -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>1.5.6.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -81,7 +88,7 @@
             <artifactId>guava</artifactId>
             <version>18.0</version>
         </dependency>
-    </dependencies>
+	</dependencies>
 
 	<build>
 		<plugins>

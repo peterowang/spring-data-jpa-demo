@@ -5,6 +5,7 @@ import com.example.demo.dao.BaseRepositoryFactoryBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * 我们使用通用repository时
@@ -14,6 +15,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories(basePackages = {"com.example.demo.dao"},
 repositoryFactoryBeanClass = BaseRepositoryFactoryBean.class)//我们自己的工厂
 @SpringBootApplication
+@EnableScheduling
 public class SpringBootJpaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootJpaApplication.class, args);
